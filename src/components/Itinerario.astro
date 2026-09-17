@@ -1,0 +1,84 @@
+---
+// Itinerario.astro
+---
+
+<section
+    id="itinerario"
+    class="relative w-full py-10 px-6 overflow-hidden isolate"
+>
+    <!-- FLOR DECORATIVA IZQUIERDA -->
+    <img
+        src="/imagenes/florcostado.png"
+        alt=""
+        aria-hidden="true"
+        class="absolute top-1/2 left-0 w-40 pointer-events-none select-none opacity-30 -translate-y-1/2 z-[-1]"
+    />
+
+    <!-- TÍTULO -->
+    <p
+        data-revelar="arriba"
+        class="font-romantic text-3xl text-[#557E30] text-center mb-10 leading-none"
+    >
+        Itinerario
+    </p>
+
+    <!-- TIMELINE GRID -->
+    <div class="relative max-w-sm mx-auto">
+        <!-- Línea vertical central -->
+        <div
+            class="absolute left-1/2 top-0 bottom-0 -translate-x-1/2"
+            style="border-left: 1.5px dashed rgba(216,201,176,0.5);"
+        >
+        </div>
+
+        <div class="grid grid-cols-2">
+
+            <div data-revelar="izquierda" class="flex flex-col items-center text-center pr-3 pt-3">
+                <img
+                    src="/imagenes/iglesia.png"
+                    class="w-12 h-12 icono-salvia"
+                />
+                <!-- Alto fijo de 2 líneas para que todas las celdas midan igual -->
+                <div class="mt-2 min-h-[2.2rem] flex items-center">
+                    <p
+                        class="font-cormorant uppercase text-sm text-[#41612A] leading-tight"
+                    >
+                        Ceremonia<br />Religiosa
+                    </p>
+                </div>
+                <p
+                    class="font-charm font-bold text-lg text-[#B09372] mt-1 leading-none"
+                >
+                    19:00 Hrs.
+                </p>
+            </div>
+
+            <div data-revelar="derecha" class="flex flex-col items-center text-center pl-3 pt-16">
+                <img
+                    src="/imagenes/recepcion.png"
+                    class="w-12 h-12 icono-salvia"
+                />
+                <!-- Alto fijo de 2 líneas para que todas las celdas midan igual -->
+                <div class="mt-2 min-h-[2.2rem] flex items-center">
+                    <p
+                        class="font-cormorant uppercase text-sm text-[#41612A] leading-tight"
+                    >
+                        Recepción<br />Social
+                    </p>
+                </div>
+                <p
+                    class="font-charm font-bold text-lg text-[#B09372] mt-1 leading-none"
+                >
+                    20:00 Hrs.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .icono-salvia {
+        filter: invert(69%) sepia(90%) saturate(276%) hue-rotate(45deg)
+            brightness(54%);
+    }
+</style>

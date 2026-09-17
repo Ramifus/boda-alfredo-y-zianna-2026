@@ -1,0 +1,53 @@
+---
+// Confirmar.astro
+---
+
+<section id="confirmar" class="relative w-full py-10 px-6 text-center overflow-hidden isolate">
+
+    <!-- FLOR DECORATIVA IZQUIERDA -->
+    <img
+        src="/imagenes/florcostado.png"
+        alt=""
+        aria-hidden="true"
+        class="absolute top-1/2 right-0 w-40 pointer-events-none select-none opacity-30 -translate-y-1/2 scale-x-[-1] z-[-1]"
+    />
+    <!-- SEPARADOR -->
+    <img
+        data-revelar="centro"
+        src="/imagenes/separador.png"
+        alt=""
+        aria-hidden="true"
+        class="mx-auto mb-7 w-48"
+    />
+
+    <!-- TÍTULO -->
+    <p data-revelar="arriba" class="font-romantic text-3xl text-[#B09372] leading-snug">
+        Confirmar Asistencia
+    </p>
+
+    <!-- TEXTO -->
+    <p
+        data-revelar="izquierda"
+        class="font-cormorant italic text-xl text-[#4E6B39] mt-4 leading-relaxed max-w-xs mx-auto"
+    >
+        Tu presencia es muy importante para nosotros. <br />
+        <span class="font-semibold" style="color: #41612A;"
+            >Por favor, confírmanos tu asistencia con nuestra Wedding
+            Planner.</span
+        >
+    </p>
+
+    <!-- BOTÓN WHATSAPP -->
+    <div data-revelar="derecha" class="flex flex-col items-center gap-4 mt-8">
+        <a
+            href="https://wa.me/59173937325?text=Hola%20soy%20__________.%20Confirmo%20mi%20asistencia%20para%20la%20boda%20de%20Alfredo%20%26%20Zianna%20%E2%9D%A4%EF%B8%8F%0A%0A%C2%A1Muchas%20gracias!"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full max-w-xs block py-3 px-6 rounded-full font-cormorant uppercase text-sm tracking-widest text-white bg-[#557E30] hover:opacity-85 transition-opacity"
+        >
+            Confirmar por WhatsApp
+        </a>
+    </div>
+
+    
+</section>
